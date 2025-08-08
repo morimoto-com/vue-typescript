@@ -11,16 +11,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref, markRaw } from 'vue'
 import type { Component } from 'vue'
+import { markRaw, ref } from 'vue'
 
-import RefExample from './themes/RefExample.vue'
 import ComputedExample from './themes/ComputedExample.vue'
+import EventExample from './themes/EventExample.vue'
+import PropsExample from './themes/PropsExample.vue'
+import RefExample from './themes/RefExample.vue'
+import UseTemplateExample from './themes/UseTemplateExample.vue'
 
 // テーマ名をキーにして、Vueコンポーネントを値に持つマップを定義
 const componentsMap: Record<string, Component> = {
   ref: markRaw(RefExample),
   computed: markRaw(ComputedExample),
+  useTemplate: markRaw(UseTemplateExample),
+  event: markRaw(EventExample),
+  props: markRaw(PropsExample),
 }
 
 // 現在のテーマを管理するリアクティブ変数
