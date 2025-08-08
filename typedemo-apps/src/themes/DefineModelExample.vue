@@ -1,6 +1,6 @@
 <template>
     <h2>Define Model</h2>
-    <DefineChildComp v-model="userInput"/>
+    <DefineChildComp v-model.trim.uppercase="userInput"/>
     <p>userInput: {{ userInput }}</p>
 </template>
 

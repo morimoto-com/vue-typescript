@@ -20,6 +20,7 @@ import PropsExample from './themes/PropsExample.vue'
 import RefExample from './themes/RefExample.vue'
 import UseTemplateExample from './themes/UseTemplateExample.vue'
 import DefineModelExample from './themes/DefineModelExample.vue'
+import EmitExample from './themes/EmitExample.vue'
 
 // テーマ名をキーにして、Vueコンポーネントを値に持つマップを定義
 const componentsMap: Record<string, Component> = {
@@ -29,6 +30,7 @@ const componentsMap: Record<string, Component> = {
   event: markRaw(EventExample),
   props: markRaw(PropsExample),
   model: markRaw(DefineModelExample),
+  emit: markRaw(EmitExample),
 }
 
 // 現在のテーマを管理するリアクティブ変数
