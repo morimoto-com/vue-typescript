@@ -4,7 +4,7 @@
 </template>
 
 <script setup lang="ts">
-import ChildComp from '@/components/ChildComp.vue'
+import ChildComp from '@/components/PropsChildComp.vue'
 import { ref } from 'vue'
 const courseTitle = ref('Vue.js course')
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <h3>ChildComp</h3>
+  <h3>PropsChild</h3>
   <p>title: {{ title }}</p>
 </template>
 
